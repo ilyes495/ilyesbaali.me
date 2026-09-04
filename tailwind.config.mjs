@@ -7,8 +7,20 @@ export default {
     plugins: [require("@tailwindcss/typography"), require("daisyui")],
     daisyui: {
         themes: [
-            "light",
-            "dark",
+            {
+                light: {
+                    ...require("daisyui/src/theming/themes")["light"],
+                    secondary: "#1d4ed8",
+                    "secondary-content": "#ffffff",
+                },
+            },
+            {
+                dark: {
+                    ...require("daisyui/src/theming/themes")["dark"],
+                    secondary: "#60a5fa",
+                    "secondary-content": "#0b1220",
+                },
+            },
             "cupcake",
             "bumblebee",
             "emerald",

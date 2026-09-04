@@ -12,5 +12,8 @@ import sitemap from "@astrojs/sitemap";
 export default defineConfig({
     integrations: [react(), tailwind(), sitemap()],
     site: template.website_url,
+    redirects: {
+        "/blog": "/blog/1",
+    },
     base: template.base,
 });

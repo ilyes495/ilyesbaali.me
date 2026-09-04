@@ -34,7 +34,7 @@ export const profile = {
 
 // Set equal to an empty string to hide the icon that you don't want to display
 export const social = {
-	email: 'ilb4001@med.cornell.edu',
+	email: 'baali.ilyes@gmail.com',
 	linkedin: 'https://linkedin.com/in/ilyesbaali',
 	x: 'https://x.com/ilyes_baali07',
 	bluesky: '',
