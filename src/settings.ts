@@ -2,7 +2,11 @@ export const profile = {
 	fullName: 'Ilyes Baali',
 	title: '',
 	institute: 'Weill Cornell Medicine / Memorial Sloan Kettering Cancer Center',
-	bio: 'I am a computational biologist working on machine learning for RNA biology and translational oncology. My research asks how RNA-binding proteins choose their targets in cells, and how much of what we measure in vivo actually reflects that choice.',
+	bio: [
+		'I completed my PhD at the <a class="link link-secondary" href="https://compbio.triiprograms.org/">Tri-I Computational Biology and Medicine program</a> at Weill Cornell Medicine and Memorial Sloan Kettering Cancer Center, supervised by <a class="link link-secondary" href="http://www.morrislab.ai/">Quaid Morris</a>, and I continue to work in the Morris Lab.',
+		'I am interested in the application of machine learning methods to functional genomics, particularly in understanding post-transcriptional regulation. My work improves the prediction of cellular binding sites of RNA-binding proteins by integrating both in vivo and in vitro data using a recalibration framework. I am also interested in developing genomic foundation models. Other than that, I collaborate with <a class="link link-secondary" href="https://www.mskcc.org/research/ski/labs/michael-kharas">Michael Kharas\' lab</a> to understand the role of MSI2-RBP in AML.',
+		'Previously, I completed my BSc and MSc at Antalya Bilim University in Electrical &amp; Electronics Engineering and Computer Engineering, under the supervision of <a class="link link-secondary" href="https://scholar.google.com/citations?user=vxtfpUQAAAAJ&amp;hl=en">Hilal Kazan</a>.',
+	],
 	author_name: 'Baali', // Author name to be highlighted in the papers section
 	research_areas: [
 		{

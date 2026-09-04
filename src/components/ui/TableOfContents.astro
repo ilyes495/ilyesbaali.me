@@ -1,0 +1,100 @@
+---
+import { template } from '@/settings'
+
+type Heading = { depth: number; slug: string; text: string }
+const { headings = [] } = Astro.props as { headings?: Heading[] }
+
+// Only h2 and h3 make a useful outline; h1 is the post title.
+const items = headings.filter((h) => h.depth === 2 || h.depth === 3)
+---
+
+<aside class='px-6 pt-6 h-screen w-[20rem] bg-base-200 text-base-content flex flex-col overflow-y-auto'>
+	<a
+		href={`${template.base}/blog/1`}
+		class='text-sm text-base-content/70 hover:text-secondary mb-8 inline-flex items-center gap-1'
+	>
+		&larr; All posts
+	</a>
+
+	{
+		items.length > 0 && (
+			<nav aria-label='Table of contents'>
+				<h2 class='text-xl font-semibold mb-4'>Content</h2>
+				<ul class='space-y-1 border-l border-base-content/15'>
+					{items.map((h) => (
+						<li>
+							<a
+								href={`#${h.slug}`}
+								data-toc-link={h.slug}
+								class:list={[
+									'toc-link block py-1 pr-2 -ml-px border-l-2 border-transparent text-base-content/70 hover:text-secondary transition-colors',
+									h.depth === 2 ? 'pl-4' : 'pl-8 text-sm',
+								]}
+							>
+								{h.text}
+							</a>
+						</li>
+					))}
+				</ul>
+			</nav>
+		)
+	}
+</aside>
+
+<style>
+	.toc-link.is-active {
+		@apply text-secondary border-secondary font-medium;
+	}
+</style>
+
+<script>
+	// Highlight the heading currently nearest the top of the viewport.
+	const setup = () => {
+		const links = Array.from(
+			document.querySelectorAll<HTMLAnchorElement>('[data-toc-link]')
+		)
+		if (links.length === 0) return
+
+		const targets = links
+			.map((link) => document.getElementById(link.dataset.tocLink!))
+			.filter((el): el is HTMLElement => el !== null)
+		if (targets.length === 0) return
+
+		const visible = new Set<string>()
+
+		const paint = () => {
+			// Prefer a heading intersecting the top band; otherwise the last one passed.
+			let activeId = ''
+			if (visible.size > 0) {
+				activeId =
+					targets.find((t) => visible.has(t.id))?.id ?? ''
+			} else {
+				for (const t of targets) {
+					if (t.getBoundingClientRect().top <= 120) activeId = t.id
+				}
+			}
+			for (const link of links) {
+				link.classList.toggle('is-active', link.dataset.tocLink === activeId)
+			}
+		}
+
+		const observer = new IntersectionObserver(
+			(entries) => {
+				for (const entry of entries) {
+					if (entry.isIntersecting) visible.add(entry.target.id)
+					else visible.delete(entry.target.id)
+				}
+				paint()
+			},
+			// Top band of the viewport: a heading counts as "current" once it reaches
+			// the top eighth and until it scrolls past the bottom.
+			{ rootMargin: '-80px 0px -70% 0px', threshold: 0 }
+		)
+
+		for (const t of targets) observer.observe(t)
+		paint()
+	}
+
+	setup()
+	document.addEventListener('astro:after-swap', setup)
+</script>

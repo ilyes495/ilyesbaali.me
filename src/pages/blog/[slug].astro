@@ -2,6 +2,7 @@
 import Layout from '@/layouts/Layout.astro'
 import {template} from '@/settings'
 import {getCollection, render} from 'astro:content'
+import TableOfContents from '@/components/ui/TableOfContents.astro'
 
 export async function getStaticPaths(): Promise<Array<{ params: { slug: string }, props: { post: any } }>> {
     const blogEntries = await getCollection("blog");
@@ -18,10 +19,11 @@ export async function getStaticPaths(): Promise<Array<{ params: { slug: string }
 }
 const {post} = Astro.props;
 const { title, date, tags} = post.data; 
-const { Content } = await render(post);
+const { Content, headings } = await render(post);
 ---
 
 <Layout title={title}>
+	<TableOfContents slot='sidebar' headings={headings} />
 	<div class='max-w-4xl mx-auto'>
 		<article
 			class='prose max-w-none prose-headings:text-base-content prose-p:text-base-content/80'
@@ -77,15 +79,41 @@ const { Content } = await render(post);
          prose-strong:text-base-content prose-strong:font-bold
          prose-em:italic
          prose-a:text-accent prose-a:no-underline hover:prose-a:underline
-         prose-code:text-accent prose-code:bg-base-200 prose-code:px-1 prose-code:py-0.5 prose-code:rounded
          prose-blockquote:border-l-4 prose-blockquote:border-accent prose-blockquote:pl-4 prose-blockquote:italic
          prose-ul:list-disc prose-ul:pl-6
          prose-ol:list-decimal prose-ol:pl-6
          prose-li:mb-2
-         prose-img:rounded-lg prose-img:my-8'
+         prose-img:rounded-lg prose-img:my-8 post-content'
         >
                 <Content />
 			</div>
 		</article>
 	</div>
 </Layout>
+
+<style is:global>
+	/* Inline code only. Fenced blocks are coloured by Shiki and must not
+	   inherit the inline chip styling, or every token gets its own background. */
+	.post-content :not(pre) > code {
+		@apply text-accent bg-base-200 px-1 py-0.5 rounded font-normal;
+	}
+	.post-content :not(pre) > code::before,
+	.post-content :not(pre) > code::after {
+		content: none;
+	}
+	.post-content pre {
+		@apply rounded-lg p-4 overflow-x-auto my-6 text-sm leading-relaxed;
+	}
+	.post-content pre code {
+		@apply bg-transparent p-0 text-inherit;
+	}
+	.post-content figure {
+		@apply my-8;
+	}
+	.post-content figcaption {
+		@apply text-sm text-base-content/60 mt-3 text-center;
+	}
+	.post-content svg {
+		@apply mx-auto block;
+	}
+</style>

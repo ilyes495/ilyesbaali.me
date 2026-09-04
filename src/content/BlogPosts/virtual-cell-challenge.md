@@ -1,5 +1,5 @@
 ---
-title: "Notes on the Virtual Cell Challenge"
+title: "The Virtual Cell Challenge"
 date: "2026-09-01"
 excerpt: "The Arc Institute's Virtual Cell Challenge asks models to predict how gene expression shifts after a perturbation. Notes on the problem and on the 2026 zero-shot format."
 tags: ["Machine learning", "Single cell", "Benchmarks"]
