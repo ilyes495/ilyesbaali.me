@@ -1,0 +1,87 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { profile } from "@/settings";
+import BetterIcon from "@/components/ui/BetterIcon.astro";
+import List from "@/components/ui/List.astro";
+import { RESEARCH_ICONS } from "@/data/researchIcons";
+
+const { research_areas } = profile;
+---
+
+<Layout title="Research | Ilyes Baali">
+  <div class="prose max-w-none">
+    <h1 class="text-3xl font-bold mb-8">Research</h1>
+
+    <div class="mb-12">
+      <p class="text-lg mb-6">
+        I apply machine learning to functional genomics, with a focus on
+        post-transcriptional regulation. Most of my work asks a single question in
+        different forms: when a measurement says an RNA-binding protein binds
+        somewhere in the cell, what is actually being measured?
+      </p>
+      <p class="text-lg mb-6">
+        My doctoral work improved the prediction of cellular binding sites of
+        RNA-binding proteins by integrating in vivo and in vitro data through a
+        recalibration framework. Alongside it, I collaborate with wet-lab groups on
+        the role of RNA-binding proteins in acute myeloid leukemia, and I am
+        interested in genomic foundation models and in agents that can carry out
+        scientific work end to end.
+      </p>
+    </div>
+
+    <h2 class="text-2xl font-bold mb-6">Research Areas</h2>
+    <div class="grid gap-8 mb-12">
+      {
+        research_areas.map((area) => (
+          <div class="flex gap-6 items-start">
+            <BetterIcon>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke-width="2"
+                class="size-6 stroke-accent"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d={RESEARCH_ICONS[area.field as keyof typeof RESEARCH_ICONS]?.path || RESEARCH_ICONS['computer-science'].path}
+                />
+              </svg>
+            </BetterIcon>
+            <div>
+              <h3 class="text-xl font-semibold mb-2">{area.title}</h3>
+              <p class="text-base">{area.description}</p>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+
+    <List
+      listTitle="Selected Projects"
+      listItems={[
+        {
+          title: "Recalibrating in vitro models for in vivo RBP binding",
+          description:
+            "An RBP-agnostic CLIP model and an intrinsic-specificity score that flag when eCLIP binding reflects condensate localization rather than sequence specificity. Presented at ISMB/ECCB 2025 and CSHL AI in Biology 2026.",
+        },
+        {
+          title: "Translational control in acute myeloid leukemia",
+          description:
+            "Quantifying translation efficiency from RiboSTAMP editing data to show that MSI2 promotes translation of a leukemic stem-cell program through a cooperative RBP module.",
+        },
+        {
+          title: "Protein representations for RBP specificity",
+          description:
+            "Benchmarking protein language model (ESM) and AlphaFold-derived representations for predicting RBP binding specificity directly from amino-acid sequence.",
+        },
+        {
+          title: "Cancer driver modules from multi-omics data",
+          description:
+            "DriveWays and MEXCOwalk, graph-based methods for identifying overlapping cancer driver modules from TCGA data.",
+        },
+      ]}
+    />
+  </div>
+</Layout>
