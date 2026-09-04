@@ -174,13 +174,25 @@ is meaningfully worse at intent, because "anyone know where I can help out this
 weekend?" contains no keyword worth matching, but it costs nothing and needs no
 network.
 
-## What I would look at next
+## Conclusion and future work
 
-- **Measure the keyword baseline properly.** My intuition is that keywords catch
-  most explicit posts and miss all the implicit ones. I never checked what
-  fraction of real intent is implicit.
-- **Confidence thresholds.** The model returns a confidence and I largely ignored
-  it. That number is the natural knob for trading precision against recall.
-- **Whether matching is the right output.** The honest failure mode is that
-  nobody wants a bot replying to their post. The interesting version of this is a
-  digest for organisations, not an autoresponder for people.
+The system runs a language model over a live firehose for about a tenth of a cent
+per hundred posts, and it does so by using the model only where language
+understanding is required. Batched classification handles intent; local
+embeddings handle retrieval. The pattern generalises to any high-volume stream
+where most items are irrelevant: batch the filter, keep the downstream work
+local, and let latency absorb the cost saving.
+
+Where I would take it next:
+
+- **Measure the keyword baseline properly.** My expectation is that keyword
+  matching catches most explicit posts and misses the implicit ones, but I never
+  quantified what fraction of real volunteering intent is implicit. That number
+  decides whether the language model is doing necessary work or expensive work.
+- **Use the confidence scores.** The model returns a per-post confidence that the
+  current pipeline largely ignores. It is the natural knob for trading precision
+  against recall, and it should drive the threshold rather than a hard-coded rule.
+- **Reconsider the output.** The honest failure mode is that few people want a bot
+  replying to their post. The more useful version of this is probably a periodic
+  digest for volunteering organisations rather than an autoresponder aimed at
+  individuals.

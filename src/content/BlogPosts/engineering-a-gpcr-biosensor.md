@@ -196,15 +196,28 @@ Our best candidate reached a pLDDT of 76.1 and an ipTM of 0.62. In context: that
 is a confidently folded receptor with a plausible but not certain interface. It is
 a starting point for experiments, not a result.
 
-## What I would do differently
+## Conclusion and future work
 
-- **Validate the cheap scorers.** We assumed the local proxies correlate with
-  pLDDT. We never measured it. One scatter plot of local fitness against pLDDT
-  across the 50 folded candidates would tell you whether the genetic algorithm
-  was searching or wandering.
-- **Spend the API budget differently.** Fifty ESMFold calls on a converged
-  population may be worse than twenty-five calls across two independent runs.
-- **Be honest about the endpoint.** Nothing in this pipeline predicts the thing
-  the sensor is for, which is the *change* in fluorescence between bound and
-  unbound states. Every score is a proxy for structural plausibility. Closing
-  that gap is the interesting problem.
+The pipeline does what it set out to do in a weekend: it turns an intractable
+combinatorial design problem into roughly 95 structure-prediction calls, and it
+returns a ranked shortlist of SSTR2-cpGFP constructs with a confidently folded
+receptor and a plausible ligand interface. The general lesson transfers beyond
+biosensors. When your only trustworthy scorer is expensive, the design of the
+cheap scorer that feeds it is the whole game.
+
+Three directions I want to take this further:
+
+- **Validate the cheap scorers against the expensive ones.** The genetic
+  algorithm assumes the local proxies correlate with pLDDT, and that assumption
+  is untested. A scatter plot of local fitness against pLDDT across the 50 folded
+  candidates would show whether the search was converging on real signal or
+  drifting.
+- **Reallocate the API budget.** Fifty ESMFold calls on a single converged
+  population may buy less than twenty-five calls across two independent runs
+  seeded differently. Diversity in the candidate pool is probably worth more than
+  depth in one basin.
+- **Predict the property that actually matters.** Every score here is a proxy for
+  structural plausibility. None of them predict the *change* in fluorescence
+  between the bound and unbound states, which is what makes a biosensor useful.
+  Closing that gap, probably by folding both states and scoring the difference,
+  is the problem I find most interesting.
