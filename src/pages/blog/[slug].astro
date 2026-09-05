@@ -22,9 +22,9 @@ const { title, date, tags} = post.data;
 const { Content, headings } = await render(post);
 ---
 
-<Layout title={title}>
+<Layout title={title} wide>
 	<TableOfContents slot='sidebar' headings={headings} />
-	<div class='max-w-4xl mx-auto'>
+	<div class='mx-auto w-full'>
 		<article
 			class='prose max-w-none prose-headings:text-base-content prose-p:text-base-content/80'
 		>
@@ -73,7 +73,7 @@ const { Content, headings } = await render(post);
 
 			<!-- Post content -->
 			<div
-				class='prose mt-8 prose-h2:text-2xl prose-h2:font-bold prose-h2:mb-4
+				class='prose max-w-none mt-8 prose-h2:text-2xl prose-h2:font-bold prose-h2:mb-4
          prose-h3:text-xl prose-h3:font-semibold prose-h3:mb-3
          prose-p:mb-4 prose-p:leading-relaxed
          prose-strong:text-base-content prose-strong:font-bold
@@ -111,10 +111,25 @@ const { Content, headings } = await render(post);
 	   cannot inherit the page theme through an <img>. Give them a light card so
 	   they stay legible in dark mode. */
 	.post-content img[src$='.svg'] {
-		@apply bg-white rounded-lg p-3;
+		@apply bg-white rounded-lg p-4 w-full h-auto;
 	}
 	.post-content figure {
 		@apply my-8;
+	}
+	/* Long lines are hard to read, so hold body text to a comfortable measure
+	   while figures, code and tables use the full column. */
+	.post-content > p,
+	.post-content > ul,
+	.post-content > ol,
+	.post-content > blockquote,
+	.post-content > h2,
+	.post-content > h3 {
+		@apply max-w-3xl;
+	}
+	/* A markdown image sits inside its own paragraph, so that paragraph must be
+	   released from the text measure or the figure inherits it. */
+	.post-content > p:has(img) {
+		@apply max-w-none;
 	}
 	.post-content figcaption {
 		@apply text-sm text-base-content/60 mt-3 text-center;

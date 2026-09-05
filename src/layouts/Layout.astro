@@ -25,6 +25,9 @@ const {
 // Pages can replace the profile/navigation sidebar with their own (e.g. a
 // table of contents on blog posts) by filling the "sidebar" slot.
 const hasCustomSidebar = Astro.slots.has('sidebar')
+
+// Blog posts opt into a wider column so figures have room.
+const { wide = false } = Astro.props
 ---
 
 <!doctype html>
@@ -78,7 +81,7 @@ const hasCustomSidebar = Astro.slots.has('sidebar')
 						</div>
 					</nav>
 				</div>
-                <main class='p-8 pt-10 lg:pt-16 lg:max-w-5xl max-w-full mx-auto min-h-screen flex flex-col justify-between'>
+                <main class:list={['p-8 pt-10 lg:pt-16 max-w-full mx-auto min-h-screen flex flex-col justify-between', wide ? 'lg:max-w-7xl' : 'lg:max-w-5xl']}>
 					<!-- Page content -->
 					<slot />
 				<Footer />
