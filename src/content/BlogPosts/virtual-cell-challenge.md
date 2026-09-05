@@ -1,6 +1,6 @@
 ---
 title: "The Virtual Cell Challenge"
-date: "2026-09-01"
+date: "2026-09-05"
 excerpt: "Can we model a cell well enough that its response to being perturbed falls out of the model? A competition turns that question into a measurable test, and my attempt hits an instructive wall."
 tags: ["Machine learning", "Single cell", "Benchmarks"]
 ---
