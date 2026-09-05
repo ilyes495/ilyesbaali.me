@@ -122,7 +122,7 @@ know why.
 
 The [2025 edition](https://arcinstitute.org/virtual-cell-initiative), the first,
 released roughly 300,000 H1 human embryonic stem cells carrying 300 genetic
-perturbations, split into fine-tuning, validation and test segments. Over 5,000
+perturbations, split into training/fine-tuning, validation and test segments. Over 5,000
 people registered from 114 countries, more than 1,200 teams submitted, and over
 300 made final submissions, competing for a $100,000 grand prize sponsored by
 NVIDIA, 10x Genomics and Ultima Genomics. The accompanying paper, *"[Virtual Cell

@@ -10,6 +10,9 @@ import Head from '../components/Head.astro'
 import { seo, profile, template } from '../settings'
 import Footer from '../components/ui/Footer.astro'
 
+// Stylesheet for the math KaTeX renders at build time.
+import 'katex/dist/katex.min.css'
+
 type Props = {
 	title?: string
 	description?: string
