@@ -1,0 +1,54 @@
+<svg color="#1b1b1f" viewBox="0 0 640 338" width="100%" role="img" aria-label="The pipeline in two steps. Step one: six donor screens are combined by a weighted average into tau, a table of one log fold change per perturbation and gene. Step two: tau is applied multiplicatively to real resting cells from the target context, and counts are resampled to produce 400 predicted cells for each perturbation." style="max-width:640px">
+  <defs>
+    <marker id="a1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="currentColor"/></marker>
+    <marker id="a2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#2563eb"/></marker>
+  </defs>
+
+  <rect x="8" y="10" width="624" height="176" rx="10" fill="currentColor" opacity="0.028"/>
+  <text x="24" y="34" font-size="11" font-weight="700" fill="currentColor" opacity="0.6">STEP 1 &#8212; BUILD THE EFFECT TABLE, ONCE</text>
+  <text x="24" y="56" font-size="10" fill="currentColor" opacity="0.7">six public screens</text>
+  <g font-size="9.5">
+    <rect x="24" y="64" width="104" height="17" rx="3" fill="currentColor" opacity="0.09"/><text x="30" y="76" fill="currentColor">K562 &#183; blood</text>
+    <rect x="24" y="84" width="104" height="17" rx="3" fill="currentColor" opacity="0.09"/><text x="30" y="96" fill="currentColor">HCT116 &#183; colon</text>
+    <rect x="24" y="104" width="104" height="17" rx="3" fill="currentColor" opacity="0.09"/><text x="30" y="116" fill="currentColor">HEK293T &#183; kidney</text>
+    <rect x="24" y="124" width="104" height="17" rx="3" fill="currentColor" opacity="0.09"/><text x="30" y="136" fill="currentColor">CD4 T &#183; resting</text>
+    <rect x="24" y="144" width="104" height="17" rx="3" fill="currentColor" opacity="0.09"/><text x="30" y="156" fill="currentColor">CD4 T &#183; 8 h</text>
+    <rect x="24" y="164" width="104" height="17" rx="3" fill="currentColor" opacity="0.09"/><text x="30" y="176" fill="currentColor">CD4 T &#183; 48 h</text>
+  </g>
+  <path d="M134 122 L178 122" stroke="currentColor" stroke-width="1.4" opacity="0.6" marker-end="url(#a1)"/>
+  <text x="156" y="114" font-size="9.5" text-anchor="middle" fill="currentColor" opacity="0.7">each gives</text>
+  <text x="156" y="138" font-size="9.5" text-anchor="middle" fill="currentColor" opacity="0.7">a table</text>
+  
+  <g>
+    <rect x="192" y="88" width="96" height="68" rx="4" fill="none" stroke="currentColor" stroke-width="1.1" opacity="0.45"/>
+    <text x="240" y="114" font-size="10" text-anchor="middle" fill="currentColor" opacity="0.8">perturbations</text>
+    <text x="240" y="130" font-size="10" text-anchor="middle" fill="currentColor" opacity="0.8">&#215; genes</text>
+    <text x="240" y="172" font-size="10" text-anchor="middle" fill="currentColor" opacity="0.65">six tables</text>
+  </g>
+  <path d="M294 122 L338 122" stroke="#2563eb" stroke-width="1.4" opacity="0.8" marker-end="url(#a2)"/><text x="316" y="114" font-size="9.5" text-anchor="middle" fill="#2563eb" opacity="0.9">weighted</text><text x="316" y="138" font-size="9.5" text-anchor="middle" fill="#2563eb" opacity="0.9">average</text>
+  <rect x="344" y="86" width="120" height="72" rx="6" fill="#2563eb" opacity="0.08" stroke="#2563eb" stroke-width="1.2"/>
+  <text x="404" y="108" font-size="10.5" font-weight="700" text-anchor="middle" fill="#2563eb">the effect table</text>
+  <text x="404" y="126" font-size="10" text-anchor="middle" fill="currentColor" opacity="0.85">300 &#215; 18,533</text>
+  <text x="404" y="142" font-size="9.5" text-anchor="middle" fill="currentColor" opacity="0.7">one number per pair</text>
+
+  <rect x="8" y="200" width="624" height="124" rx="10" fill="#2563eb" opacity="0.045"/>
+  <text x="24" y="224" font-size="11" font-weight="700" fill="#2563eb">STEP 2 &#8212; APPLY IT, ONCE PER TARGET CONTEXT</text>
+  <rect x="24" y="240" width="96" height="72" rx="6" fill="none" stroke="#2563eb" stroke-width="1.2" opacity="0.7"/>
+  <text x="72" y="262" font-size="10.5" font-weight="700" text-anchor="middle" fill="#2563eb">effect table</text>
+  <text x="72" y="280" font-size="10" text-anchor="middle" fill="currentColor" opacity="0.7">borrowed from</text>
+  <text x="72" y="294" font-size="10" text-anchor="middle" fill="currentColor" opacity="0.7">other cell types</text>
+  <text x="140" y="282" font-size="16" fill="currentColor" opacity="0.7">&#215;</text>
+  <rect x="168" y="240" width="112" height="72" rx="6" fill="none" stroke="currentColor" stroke-width="1.2" opacity="0.55"/>
+  <text x="224" y="262" font-size="10.5" text-anchor="middle" fill="currentColor">real resting cells</text>
+  <text x="224" y="278" font-size="10.5" text-anchor="middle" fill="currentColor">from context A</text>
+  <text x="224" y="298" font-size="10" text-anchor="middle" fill="currentColor" opacity="0.6">given to us</text>
+  <path d="M286 276 L330 276" stroke="#2563eb" stroke-width="1.4" opacity="0.8" marker-end="url(#a2)"/>
+  <text x="308" y="268" font-size="9.5" text-anchor="middle" fill="currentColor" opacity="0.7">resample</text>
+  <text x="308" y="292" font-size="9.5" text-anchor="middle" fill="currentColor" opacity="0.7">counts</text>
+  <rect x="334" y="240" width="128" height="72" rx="6" fill="none" stroke="#2563eb" stroke-width="1.2" opacity="0.7"/>
+  <text x="398" y="262" font-size="10.5" text-anchor="middle" fill="#2563eb">400 predicted cells</text>
+  <text x="398" y="278" font-size="10.5" text-anchor="middle" fill="#2563eb">per perturbation</text>
+  <text x="398" y="298" font-size="10" text-anchor="middle" fill="currentColor" opacity="0.6">integers, and noisy</text>
+</svg>

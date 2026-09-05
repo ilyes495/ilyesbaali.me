@@ -1,0 +1,33 @@
+<svg color="#1b1b1f" viewBox="0 0 640 202" width="100%" role="img" aria-label="The measurement drawn as a table: one row per cell, one column per gene, integer counts in the body, and a label on each row naming which gene was knocked down in that cell. 55,200 cells by 18,533 genes, about 69 percent zeros." style="max-width:640px">
+  <text x="20" y="24" font-size="12" font-weight="600" fill="currentColor">What the experiment hands you</text>
+  <text x="20" y="40" font-size="10.5" fill="currentColor" opacity="0.65">one row per cell, one column per gene, plus a label saying what was knocked down in that cell</text>
+  <text x="20" y="68" font-size="9.5" font-weight="700" fill="currentColor" opacity="0.55">KNOCKED DOWN</text>
+  <text x="160" y="68" font-size="9.5" font-weight="700" fill="currentColor" opacity="0.55">GENE 1</text>
+  <text x="216" y="68" font-size="9.5" font-weight="700" fill="currentColor" opacity="0.55">GENE 2</text>
+  <text x="272" y="68" font-size="9.5" font-weight="700" fill="currentColor" opacity="0.55">GENE 3</text>
+  <text x="328" y="68" font-size="9.5" font-weight="700" fill="currentColor" opacity="0.55">GENE 4</text>
+  <text x="384" y="68" font-size="9.5" font-weight="700" fill="currentColor" opacity="0.55">GENE 5</text>
+  <text x="440" y="68" font-size="9.5" fill="currentColor" opacity="0.45">&#8230;</text>
+  <g font-size="10.5" fill="currentColor">
+    <text x="20" y="92">cell 1</text><text x="76" y="92" opacity="0.75">TP53</text>
+    <text x="176" y="92" opacity="0.35">0</text><text x="232" y="92">7</text><text x="288" y="92" opacity="0.35">0</text><text x="344" y="92">41</text><text x="400" y="92" opacity="0.35">0</text>
+    <text x="20" y="114">cell 2</text><text x="76" y="114" opacity="0.75">TP53</text>
+    <text x="176" y="114">3</text><text x="232" y="114" opacity="0.35">0</text><text x="288" y="114" opacity="0.35">0</text><text x="344" y="114">38</text><text x="400" y="114">2</text>
+    <text x="20" y="136">cell 3</text><text x="76" y="136" opacity="0.75">MYC</text>
+    <text x="176" y="136" opacity="0.35">0</text><text x="232" y="136" opacity="0.35">0</text><text x="288" y="136">12</text><text x="344" y="136">55</text><text x="400" y="136" opacity="0.35">0</text>
+    <text x="20" y="158">cell 4</text><text x="76" y="158" opacity="0.75">none</text>
+    <text x="176" y="158">1</text><text x="232" y="158">4</text><text x="288" y="158" opacity="0.35">0</text><text x="344" y="158">44</text><text x="400" y="158" opacity="0.35">0</text>
+    <text x="20" y="180" opacity="0.45">&#8230;</text><text x="176" y="180" opacity="0.45">&#8230;</text><text x="232" y="180" opacity="0.45">&#8230;</text><text x="288" y="180" opacity="0.45">&#8230;</text><text x="344" y="180" opacity="0.45">&#8230;</text><text x="400" y="180" opacity="0.45">&#8230;</text>
+  </g>
+  <line x1="150" y1="74" x2="150" y2="188" stroke="currentColor" stroke-width="1" opacity="0.2"/>
+  <line x1="20" y1="74" x2="470" y2="74" stroke="currentColor" stroke-width="1" opacity="0.2"/>
+  <rect x="14" y="78" width="132" height="106" rx="4" fill="#2563eb" opacity="0.06"/>
+  <text x="484" y="96" font-size="10.5" fill="#2563eb" font-weight="600">the label</text>
+  <text x="484" y="112" font-size="10" fill="currentColor" opacity="0.75">which gene was</text>
+  <text x="484" y="126" font-size="10" fill="currentColor" opacity="0.75">switched off here</text>
+  <text x="484" y="152" font-size="10.5" fill="currentColor" font-weight="600">the counts</text>
+  <text x="484" y="168" font-size="10" fill="currentColor" opacity="0.75">RNA molecules caught</text>
+  <text x="484" y="182" font-size="10" fill="currentColor" opacity="0.75">for that gene, in that cell</text>
+  <g font-size="10.5" fill="currentColor" opacity="0.8">
+  </g>
+</svg>

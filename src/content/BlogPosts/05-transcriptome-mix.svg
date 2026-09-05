@@ -1,0 +1,43 @@
+<svg color="#1b1b1f" viewBox="0 0 640 241" width="100%" role="img" aria-label="For each of the three contexts, a stacked bar splitting the 18,533 genes into silent, barely expressed, moderately expressed and highly expressed slices. Roughly half of every transcriptome falls in the first two slices." style="max-width:640px">
+  <text x="20" y="24" font-size="12" font-weight="600" fill="currentColor">What a transcriptome is made of</text>
+  <text x="20" y="40" font-size="10.5" fill="currentColor" opacity="0.65">all 18,533 genes, split by how strongly each is expressed in that context</text>
+  <text x="92" y="90" font-size="11" text-anchor="end" fill="#2563eb" font-weight="600">context A</text>
+  <rect x="104.0" y="76" width="64.2" height="22" fill="#2563eb" opacity="0.1"/>
+  <text x="136" y="91" font-size="9.5" text-anchor="middle" fill="currentColor" opacity="0.9">13%</text>
+  <rect x="168.2" y="76" width="166.3" height="22" fill="#2563eb" opacity="0.3"/>
+  <text x="251" y="91" font-size="9.5" text-anchor="middle" fill="currentColor" opacity="0.9">34%</text>
+  <rect x="334.4" y="76" width="184.5" height="22" fill="#2563eb" opacity="0.55"/>
+  <text x="427" y="91" font-size="9.5" text-anchor="middle" fill="currentColor" opacity="0.9">37%</text>
+  <rect x="519.0" y="76" width="81.0" height="22" fill="#2563eb" opacity="0.85"/>
+  <text x="559" y="91" font-size="9.5" text-anchor="middle" fill="currentColor" opacity="0.9">16%</text>
+  <text x="92" y="134" font-size="11" text-anchor="end" fill="#d55e00" font-weight="600">context B</text>
+  <rect x="104.0" y="120" width="76.4" height="22" fill="#d55e00" opacity="0.1"/>
+  <text x="142" y="135" font-size="9.5" text-anchor="middle" fill="currentColor" opacity="0.9">15%</text>
+  <rect x="180.4" y="120" width="162.5" height="22" fill="#d55e00" opacity="0.3"/>
+  <text x="262" y="135" font-size="9.5" text-anchor="middle" fill="currentColor" opacity="0.9">33%</text>
+  <rect x="342.8" y="120" width="183.1" height="22" fill="#d55e00" opacity="0.55"/>
+  <text x="434" y="135" font-size="9.5" text-anchor="middle" fill="currentColor" opacity="0.9">37%</text>
+  <rect x="525.9" y="120" width="74.1" height="22" fill="#d55e00" opacity="0.85"/>
+  <text x="563" y="135" font-size="9.5" text-anchor="middle" fill="currentColor" opacity="0.9">15%</text>
+  <text x="92" y="178" font-size="11" text-anchor="end" fill="#009e73" font-weight="600">context C</text>
+  <rect x="104.0" y="164" width="62.0" height="22" fill="#009e73" opacity="0.1"/>
+  <text x="135" y="179" font-size="9.5" text-anchor="middle" fill="currentColor" opacity="0.9">13%</text>
+  <rect x="166.0" y="164" width="163.0" height="22" fill="#009e73" opacity="0.3"/>
+  <text x="248" y="179" font-size="9.5" text-anchor="middle" fill="currentColor" opacity="0.9">33%</text>
+  <rect x="329.1" y="164" width="195.0" height="22" fill="#009e73" opacity="0.55"/>
+  <text x="427" y="179" font-size="9.5" text-anchor="middle" fill="currentColor" opacity="0.9">39%</text>
+  <rect x="524.1" y="164" width="75.9" height="22" fill="#009e73" opacity="0.85"/>
+  <text x="562" y="179" font-size="9.5" text-anchor="middle" fill="currentColor" opacity="0.9">15%</text>
+  <rect x="104" y="205" width="12" height="12" rx="2" fill="currentColor" opacity="0.1"/>
+  <text x="122" y="214" font-size="10" fill="currentColor" opacity="0.85">silent</text>
+  <text x="122" y="227" font-size="9" fill="currentColor" opacity="0.55">0</text>
+  <rect x="232" y="205" width="12" height="12" rx="2" fill="currentColor" opacity="0.3"/>
+  <text x="250" y="214" font-size="10" fill="currentColor" opacity="0.85">barely on</text>
+  <text x="250" y="227" font-size="9" fill="currentColor" opacity="0.55">under 5 CPM</text>
+  <rect x="360" y="205" width="12" height="12" rx="2" fill="currentColor" opacity="0.55"/>
+  <text x="378" y="214" font-size="10" fill="currentColor" opacity="0.85">moderate</text>
+  <text x="378" y="227" font-size="9" fill="currentColor" opacity="0.55">5 to 100</text>
+  <rect x="488" y="205" width="12" height="12" rx="2" fill="currentColor" opacity="0.85"/>
+  <text x="506" y="214" font-size="10" fill="currentColor" opacity="0.85">strong</text>
+  <text x="506" y="227" font-size="9" fill="currentColor" opacity="0.55">over 100</text>
+</svg>

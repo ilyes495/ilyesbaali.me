@@ -1,0 +1,46 @@
+<svg color="#1b1b1f" viewBox="0 0 640 331" width="100%" role="img" aria-label="A grid of the six scored components against four things a submission controls: direction of the predicted changes, their magnitude, how many genes are called changed, and cell-to-cell variation. Filled circles mark strong sensitivity, half circles weak, empty circles none. Discrimination is insensitive to magnitude; the three differential-expression components all collapse without cell-to-cell variation." style="max-width:640px">
+  <defs>
+    <circle id="full" r="6" fill="#2563eb" opacity="0.85"/>
+    <path id="half" d="M0 -6 A 6 6 0 0 1 0 6 Z" fill="#2563eb" opacity="0.6"/>
+    <circle id="none" r="6" fill="none" stroke="currentColor" stroke-width="1" opacity="0.28"/>
+  </defs>
+  <text x="20" y="24" font-size="12" font-weight="600" fill="currentColor">What each component actually responds to</text>
+  <text x="20" y="40" font-size="10.5" fill="currentColor" opacity="0.65">the six scored components against the four things a submission controls</text>
+  <text x="324" y="72" font-size="9" font-weight="700" text-anchor="middle" fill="currentColor" opacity="0.6">DIRECTION</text>
+  <text x="324" y="84" font-size="9" text-anchor="middle" fill="currentColor" opacity="0.45">which way</text>
+  <text x="404" y="72" font-size="9" font-weight="700" text-anchor="middle" fill="currentColor" opacity="0.6">MAGNITUDE</text>
+  <text x="404" y="84" font-size="9" text-anchor="middle" fill="currentColor" opacity="0.45">how much</text>
+  <text x="484" y="72" font-size="9" font-weight="700" text-anchor="middle" fill="currentColor" opacity="0.6">HOW MANY</text>
+  <text x="484" y="84" font-size="9" text-anchor="middle" fill="currentColor" opacity="0.45">genes called</text>
+  <text x="564" y="72" font-size="9" font-weight="700" text-anchor="middle" fill="currentColor" opacity="0.6">SPREAD</text>
+  <text x="564" y="84" font-size="9" text-anchor="middle" fill="currentColor" opacity="0.45">cell-to-cell</text>
+  <g>
+    <rect x="16" y="96" width="608" height="30" rx="4" fill="currentColor" opacity="0.045"/>
+    <text x="24" y="115" font-size="10.5" fill="currentColor">discrimination</text>
+    <text x="150" y="115" font-size="9" fill="currentColor" opacity="0.5">right perturbation?</text>
+    <use href="#full" x="324" y="111"/><use href="#none" x="404" y="111"/><use href="#none" x="484" y="111"/><use href="#half" x="564" y="111"/>
+    <text x="24" y="149" font-size="10.5" fill="currentColor">expression accuracy</text>
+    <text x="150" y="149" font-size="9" fill="currentColor" opacity="0.5">profile close?</text>
+    <use href="#full" x="324" y="145"/><use href="#full" x="404" y="145"/><use href="#none" x="484" y="145"/><use href="#none" x="564" y="145"/>
+    <rect x="16" y="164" width="608" height="30" rx="4" fill="currentColor" opacity="0.045"/>
+    <text x="24" y="183" font-size="10.5" fill="currentColor">fold-change accuracy</text>
+    <text x="150" y="183" font-size="9" fill="currentColor" opacity="0.5">sizes right?</text>
+    <use href="#half" x="324" y="179"/><use href="#full" x="404" y="179"/><use href="#none" x="484" y="179"/><use href="#half" x="564" y="179"/>
+    <text x="24" y="217" font-size="10.5" fill="currentColor">direction fidelity</text>
+    <text x="150" y="217" font-size="9" fill="currentColor" opacity="0.5">right genes and way?</text>
+    <use href="#full" x="324" y="213"/><use href="#half" x="404" y="213"/><use href="#full" x="484" y="213"/><use href="#full" x="564" y="213"/>
+    <rect x="16" y="232" width="608" height="30" rx="4" fill="currentColor" opacity="0.045"/>
+    <text x="24" y="251" font-size="10.5" fill="currentColor">direction reach</text>
+    <text x="150" y="251" font-size="9" fill="currentColor" opacity="0.5">how deep stays right?</text>
+    <use href="#full" x="324" y="247"/><use href="#half" x="404" y="247"/><use href="#half" x="484" y="247"/><use href="#full" x="564" y="247"/>
+    <text x="24" y="285" font-size="10.5" fill="currentColor">significance overlap</text>
+    <text x="150" y="285" font-size="9" fill="currentColor" opacity="0.5">same genes flagged?</text>
+    <use href="#none" x="324" y="281"/><use href="#half" x="404" y="281"/><use href="#full" x="484" y="281"/><use href="#full" x="564" y="281"/>
+  </g>
+  <g font-size="9.5">
+    <use href="#full" x="26" y="310"/><text x="38" y="314" fill="currentColor" opacity="0.8">strongly affected</text>
+    <use href="#half" x="150" y="310"/><text x="162" y="314" fill="currentColor" opacity="0.8">weakly</text>
+    <use href="#none" x="226" y="310"/><text x="238" y="314" fill="currentColor" opacity="0.8">not at all</text>
+    
+  </g>
+</svg>

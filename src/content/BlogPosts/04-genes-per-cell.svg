@@ -1,0 +1,20 @@
+<svg color="#1b1b1f" viewBox="0 0 640 256" width="100%" role="img" aria-label="Left: distribution of how many genes are detected in each cell, peaking near six thousand of 18,533. Right: the share of the transcriptome sitting below expression thresholds, with nearly half of all genes under five counts per million in every context." style="max-width:640px">
+  <text x="20" y="24" font-size="12" font-weight="600" fill="currentColor">How much each cell actually reports</text>
+  <text x="20" y="40" font-size="10.5" fill="currentColor" opacity="0.65">genes detected per cell, out of the 18,533 measured</text>
+  <polyline points="64.0,206.0 73.6,206.0 83.1,206.0 92.7,206.0 102.3,206.0 111.9,206.0 121.4,206.0 131.0,206.0 140.6,205.6 150.1,200.6 159.7,198.6 169.3,194.4 178.9,191.3 188.4,190.0 198.0,185.1 207.6,178.1 217.1,176.9 226.7,169.8 236.3,162.2 245.9,157.2 255.4,143.4 265.0,125.2 274.6,112.4 284.1,100.2 293.7,87.1 303.3,86.5 312.9,78.0 322.4,87.9 332.0,108.7 341.6,130.4 351.1,155.7 360.7,177.3 370.3,193.7 379.9,204.5 389.4,206.0 399.0,206.0 408.6,206.0 418.1,206.0 427.7,206.0 437.3,206.0 446.9,206.0 456.4,206.0 466.0,206.0 475.6,206.0 485.1,206.0 494.7,206.0 504.3,206.0 513.9,206.0 523.4,206.0 533.0,206.0 542.6,206.0 552.1,206.0 561.7,206.0 571.3,206.0 580.9,206.0 590.4,206.0" fill="none" stroke="#2563eb" stroke-width="1.6" opacity="0.9"/>
+  <polyline points="64.0,206.0 73.6,206.0 83.1,199.6 92.7,196.0 102.3,201.2 111.9,203.0 121.4,202.2 131.0,203.0 140.6,202.5 150.1,202.4 159.7,200.6 169.3,200.9 178.9,200.8 188.4,200.4 198.0,198.3 207.6,196.0 217.1,192.5 226.7,187.0 236.3,175.9 245.9,160.1 255.4,139.6 265.0,105.5 274.6,91.1 284.1,78.0 293.7,91.3 303.3,104.2 312.9,139.0 322.4,167.3 332.0,187.2 341.6,200.6 351.1,205.5 360.7,206.0 370.3,206.0 379.9,206.0 389.4,206.0 399.0,206.0 408.6,206.0 418.1,206.0 427.7,206.0 437.3,206.0 446.9,206.0 456.4,206.0 466.0,206.0 475.6,206.0 485.1,206.0 494.7,206.0 504.3,206.0 513.9,206.0 523.4,206.0 533.0,206.0 542.6,206.0 552.1,206.0 561.7,206.0 571.3,206.0 580.9,206.0 590.4,206.0" fill="none" stroke="#d55e00" stroke-width="1.6" opacity="0.9"/>
+  <polyline points="64.0,206.0 73.6,206.0 83.1,206.0 92.7,206.0 102.3,206.0 111.9,206.0 121.4,206.0 131.0,205.9 140.6,205.5 150.1,201.2 159.7,198.2 169.3,196.1 178.9,191.5 188.4,191.2 198.0,184.3 207.6,180.6 217.1,175.3 226.7,162.4 236.3,153.1 245.9,137.5 255.4,126.1 265.0,113.6 274.6,90.7 284.1,85.3 293.7,78.0 303.3,81.6 312.9,86.2 322.4,95.9 332.0,119.8 341.6,144.2 351.1,160.5 360.7,180.2 370.3,197.3 379.9,204.5 389.4,206.0 399.0,206.0 408.6,206.0 418.1,206.0 427.7,206.0 437.3,206.0 446.9,206.0 456.4,206.0 466.0,206.0 475.6,206.0 485.1,206.0 494.7,206.0 504.3,206.0 513.9,206.0 523.4,206.0 533.0,206.0 542.6,206.0 552.1,206.0 561.7,206.0 571.3,206.0 580.9,206.0 590.4,206.0" fill="none" stroke="#009e73" stroke-width="1.6" opacity="0.9"/>
+  <line x1="291" y1="72" x2="291" y2="206" stroke="currentColor" stroke-width="1" stroke-dasharray="3 3" opacity="0.45"/>
+  <text x="279" y="112" font-size="10" text-anchor="end" fill="currentColor" opacity="0.7">median 5,939</text>
+  <line x1="64" y1="206" x2="600" y2="206" stroke="currentColor" stroke-width="1" opacity="0.35"/>
+  <text x="64" y="222" font-size="9.5" text-anchor="middle" fill="currentColor" opacity="0.65">0</text>
+  <text x="255" y="222" font-size="9.5" text-anchor="middle" fill="currentColor" opacity="0.65">5,000</text>
+  <text x="447" y="222" font-size="9.5" text-anchor="middle" fill="currentColor" opacity="0.65">10,000</text>
+  <text x="332" y="240" font-size="10.5" text-anchor="middle" fill="currentColor" opacity="0.7">genes with at least one molecule caught</text>
+  <line x1="20" y1="58" x2="34" y2="58" stroke="#2563eb" stroke-width="2.4"/>
+  <text x="39" y="62" font-size="10" fill="#2563eb" font-weight="600">context A</text>
+  <line x1="104" y1="58" x2="118" y2="58" stroke="#d55e00" stroke-width="2.4"/>
+  <text x="123" y="62" font-size="10" fill="#d55e00" font-weight="600">context B</text>
+  <line x1="188" y1="58" x2="202" y2="58" stroke="#009e73" stroke-width="2.4"/>
+  <text x="207" y="62" font-size="10" fill="#009e73" font-weight="600">context C</text>
+</svg>
