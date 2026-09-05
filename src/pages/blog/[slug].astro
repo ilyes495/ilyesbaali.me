@@ -29,7 +29,7 @@ const { Content, headings } = await render(post);
 			class='prose max-w-none prose-headings:text-base-content prose-p:text-base-content/80'
 		>
 			<!-- Header section -->
-			<div class='mb-8 border-b pb-8'>
+			<div class='mb-8 border-b pb-8 max-w-3xl mx-auto'>
 				<h1 class='text-4xl font-bold mb-4 text-base-content'>{title}</h1>
 				<div class='flex flex-wrap items-center gap-4 text-base-content/70'>
 					<!-- Date -->
@@ -123,13 +123,15 @@ const { Content, headings } = await render(post);
 	.post-content > ol,
 	.post-content > blockquote,
 	.post-content > h2,
-	.post-content > h3 {
-		@apply max-w-3xl;
+	.post-content > h3,
+	.post-content > pre,
+	.post-content > table {
+		@apply max-w-3xl mx-auto;
 	}
 	/* A markdown image sits inside its own paragraph, so that paragraph must be
 	   released from the text measure or the figure inherits it. */
 	.post-content > p:has(img) {
-		@apply max-w-none;
+		@apply max-w-5xl mx-auto;
 	}
 	.post-content figcaption {
 		@apply text-sm text-base-content/60 mt-3 text-center;
