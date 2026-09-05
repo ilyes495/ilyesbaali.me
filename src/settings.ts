@@ -66,7 +66,7 @@ export const template = {
 // See docs/comments.md. Leave enabled false to hide the section entirely.
 export const comments = {
 	enabled: false,
-	repo: '', // e.g. 'ilyes495/ilyesbaali-astro'
+	repo: '', // e.g. 'ilyes495/ilyesbaali.me'
 	repoId: '',
 	category: 'Comments',
 	categoryId: '',

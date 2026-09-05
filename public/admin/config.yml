@@ -3,7 +3,7 @@
 
 backend:
   name: github
-  repo: ilyes495/ilyesbaali-astro   # change if the repo is named differently
+  repo: ilyes495/ilyesbaali.me
   branch: main
   # Signing in, in order of effort:
   #   1. Local:  run `npm run dev` and choose "Work with Local Repository".

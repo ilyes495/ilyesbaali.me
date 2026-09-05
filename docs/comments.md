@@ -34,7 +34,7 @@ project has not been pushed yet, so do that first.
    ```ts
    export const comments = {
      enabled: true,
-     repo: 'ilyes495/ilyesbaali-astro',
+     repo: 'ilyes495/ilyesbaali.me',
      repoId: 'R_kgD...',
      category: 'Comments',
      categoryId: 'DIC_kwD...',
