@@ -65,11 +65,11 @@ export const template = {
 // after enabling Discussions and installing the giscus app on the repository.
 // See docs/comments.md. Leave enabled false to hide the section entirely.
 export const comments = {
-	enabled: false,
-	repo: '', // e.g. 'ilyes495/ilyesbaali.me'
-	repoId: '',
-	category: 'Comments',
-	categoryId: '',
+	enabled: true,
+	repo: 'ilyes495/ilyesbaali.me',
+	repoId: 'R_kgDOUPgq-Q',
+	category: 'Announcements',
+	categoryId: 'DIC_kwDOUPgq-c4DE9C6',
 }
 
 export const seo = {
