@@ -3,6 +3,7 @@ import Layout from '@/layouts/Layout.astro'
 import {template} from '@/settings'
 import {getCollection, render} from 'astro:content'
 import TableOfContents from '@/components/ui/TableOfContents.astro'
+import Comments from '@/components/ui/Comments.astro'
 
 export async function getStaticPaths(): Promise<Array<{ params: { slug: string }, props: { post: any } }>> {
     const blogEntries = await getCollection("blog");
@@ -88,6 +89,8 @@ const { Content, headings } = await render(post);
                 <Content />
 			</div>
 		</article>
+
+		<Comments />
 	</div>
 </Layout>
 

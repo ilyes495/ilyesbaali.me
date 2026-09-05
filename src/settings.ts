@@ -61,6 +61,17 @@ export const template = {
 	base: '',
 }
 
+// Comments are GitHub Discussions via giscus. Fill these in from giscus.app
+// after enabling Discussions and installing the giscus app on the repository.
+// See docs/comments.md. Leave enabled false to hide the section entirely.
+export const comments = {
+	enabled: false,
+	repo: '', // e.g. 'ilyes495/ilyesbaali-astro'
+	repoId: '',
+	category: 'Comments',
+	categoryId: '',
+}
+
 export const seo = {
 	default_title: 'Ilyes Baali',
 	default_description:
