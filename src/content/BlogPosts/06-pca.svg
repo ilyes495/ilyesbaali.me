@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" color="#1b1b1f" viewBox="0 0 640 348" width="100%" role="img" aria-label="A scatter plot of the first two principal components of all 55,200 resting cells. Three well-separated clouds, blue for context A, orange for B, green for C." style="max-width:640px">
+<svg xmlns="http://www.w3.org/2000/svg" font-family="Charter, 'Bitstream Charter', XCharter, 'Sitka Text', Cambria, Georgia, 'Times New Roman', serif" color="#1b1b1f" viewBox="0 0 640 349" width="100%" role="img" aria-label="A scatter plot of the first two principal components of all 55,200 resting cells. Three well-separated clouds, blue for context A, orange for B, green for C." style="max-width:640px">
   <defs><clipPath id="cp"><rect x="70" y="50" width="536" height="256"/></clipPath></defs>
   <text x="78" y="26" font-size="12" font-weight="600" fill="currentColor">PCA of every resting cell</text>
   <text x="78" y="42" font-size="10.5" fill="currentColor" opacity="0.65">principal component analysis &#183; PC1 29% and PC2 19% of all variation between cells</text>
