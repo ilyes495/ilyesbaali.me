@@ -1,4 +1,4 @@
-<svg color="#1b1b1f" viewBox="0 0 640 338" width="100%" role="img" aria-label="The pipeline in two steps. Step one: six donor screens are combined by a weighted average into tau, a table of one log fold change per perturbation and gene. Step two: tau is applied multiplicatively to real resting cells from the target context, and counts are resampled to produce 400 predicted cells for each perturbation." style="max-width:640px">
+<svg xmlns="http://www.w3.org/2000/svg" color="#1b1b1f" viewBox="0 0 640 338" width="100%" role="img" aria-label="The pipeline in two steps. Step one: six donor screens are combined by a weighted average into tau, a table of one log fold change per perturbation and gene. Step two: tau is applied multiplicatively to real resting cells from the target context, and counts are resampled to produce 400 predicted cells for each perturbation." style="max-width:640px">
   <defs>
     <marker id="a1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
       <path d="M0 0 L10 5 L0 10 z" fill="currentColor"/></marker>

@@ -107,6 +107,12 @@ const { Content, headings } = await render(post);
 	.post-content pre code {
 		@apply bg-transparent p-0 text-inherit;
 	}
+	/* Figures are external SVGs whose ink is baked dark, because currentColor
+	   cannot inherit the page theme through an <img>. Give them a light card so
+	   they stay legible in dark mode. */
+	.post-content img[src$='.svg'] {
+		@apply bg-white rounded-lg p-3;
+	}
 	.post-content figure {
 		@apply my-8;
 	}

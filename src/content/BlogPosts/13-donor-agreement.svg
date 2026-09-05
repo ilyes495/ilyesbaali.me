@@ -1,4 +1,4 @@
-<svg color="#1b1b1f" viewBox="0 0 640 314" width="100%" role="img" aria-label="A bar chart of how well two screens agree on the same perturbation. Pairs from the same lineage agree at cosine 0.25 to 0.33; every cross-lineage pair falls between 0.016 and 0.037, roughly ten times lower." style="max-width:640px">
+<svg xmlns="http://www.w3.org/2000/svg" color="#1b1b1f" viewBox="0 0 640 314" width="100%" role="img" aria-label="A bar chart of how well two screens agree on the same perturbation. Pairs from the same lineage agree at cosine 0.25 to 0.33; every cross-lineage pair falls between 0.016 and 0.037, roughly ten times lower." style="max-width:640px">
   <text x="20" y="24" font-size="12" font-weight="600" fill="currentColor">Do two screens agree about the same perturbation?</text>
   <text x="20" y="40" font-size="10.5" fill="currentColor" opacity="0.65">for each perturbation, how aligned the two screens&#8217; rows of effect numbers are</text>
   <text x="262" y="66" font-size="10" font-weight="700" fill="#2563eb">SAME LINEAGE &#8212; one cell type, different states</text>
