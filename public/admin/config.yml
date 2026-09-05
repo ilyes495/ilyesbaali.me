@@ -1,0 +1,70 @@
+# Sveltia CMS — edits the markdown in this repository directly.
+# Saving publishes a commit to main, which triggers the deploy workflow.
+
+backend:
+  name: github
+  repo: ilyes495/ilyesbaali-astro   # change if the repo is named differently
+  branch: main
+  # Signing in, in order of effort:
+  #   1. Local:  run `npm run dev` and choose "Work with Local Repository".
+  #              No accounts, no OAuth. Saves straight to the files on disk.
+  #   2. Remote: choose "Sign In Using Access Token" and paste a GitHub
+  #              personal access token with repo scope. No server needed.
+  #   3. Remote, one click: register a GitHub OAuth app, deploy the Sveltia
+  #              CMS Authenticator to Cloudflare Workers, then uncomment:
+  # base_url: https://your-authenticator.workers.dev
+
+# Uploaded media lands beside the posts, which is where the figures already live
+# and how the markdown references them.
+media_folder: src/content/BlogPosts
+public_folder: .
+
+publish_mode: simple
+site_url: https://ilyesbaali.me
+logo_url: /favicon.png
+
+collections:
+  - name: blog
+    label: Blog posts
+    label_singular: Blog post
+    folder: src/content/BlogPosts
+    extension: md
+    format: yaml-frontmatter
+    create: true
+    slug: '{{slug}}'
+    identifier_field: title
+    summary: '{{title}} — {{date | date("yyyy-MM-dd")}}'
+    sortable_fields: ['date', 'title']
+    fields:
+      - name: title
+        label: Title
+        widget: string
+        hint: Short and plain, two to four words.
+
+      - name: date
+        label: Date
+        widget: datetime
+        date_format: 'yyyy-MM-dd'
+        time_format: false
+        picker_utc: true
+        hint: Shown on the post and used to order the index.
+
+      - name: excerpt
+        label: Excerpt
+        widget: text
+        required: true
+        hint: One or two sentences. Plain text, shown on the blog index card.
+
+      - name: tags
+        label: Tags
+        widget: list
+        min: 1
+        default: ['Machine learning']
+        hint: At least one. The first tag becomes the badge on the index.
+
+      - name: body
+        label: Body
+        widget: markdown
+        hint: >-
+          Figures are referenced as ./name.svg and live in the same folder.
+          Math uses $inline$ and $$display$$.
