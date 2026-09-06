@@ -1,4 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" font-family="Charter, 'Bitstream Charter', XCharter, 'Sitka Text', Cambria, Georgia, 'Times New Roman', serif" color="#1b1b1f" viewBox="0 0 640 241" width="100%" role="img" aria-label="For each of the three contexts, a stacked bar splitting the 18,533 genes into silent, barely expressed, moderately expressed and highly expressed slices. Roughly half of every transcriptome falls in the first two slices." style="max-width:640px">
+<svg xmlns="http://www.w3.org/2000/svg" font-family="Charter, 'Bitstream Charter', XCharter, 'Sitka Text', Cambria, Georgia, 'Times New Roman', serif" color="#1b1b1f" viewBox="0 0 640 241" width="100%" role="img" aria-label="For each of the three contexts, a stacked bar splitting the 18,533 genes into silent, barely expressed, moderately expressed and highly expressed slices. Roughly half of every transcriptome falls in the first two slices.">
+  <rect x="0" y="0" width="100%" height="100%" fill="#ffffff"/>
   <text x="20" y="24" font-size="12" font-weight="600" fill="currentColor">What a transcriptome is made of</text>
   <text x="20" y="40" font-size="10.5" fill="currentColor" opacity="0.65">all 18,533 genes, split by how strongly each is expressed in that context</text>
   <text x="92" y="90" font-size="11" text-anchor="end" fill="#2563eb" font-weight="600">context A</text>

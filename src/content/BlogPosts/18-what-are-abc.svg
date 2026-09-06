@@ -1,6 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" font-family="Charter, 'Bitstream Charter', XCharter, 'Sitka Text', Cambria, Georgia, 'Times New Roman', serif" color="#1b1b1f" viewBox="0 0 640 319" width="100%" role="img" aria-label="Three panels, one per test context, each ranking the closest matches among 1673 reference cell lines. Context A matches Jurkat and four other lymphoid lines; context B matches HeLa by a wide margin; context C matches CAL33 and four other head and neck lines." style="max-width:640px">
+<svg xmlns="http://www.w3.org/2000/svg" font-family="Charter, 'Bitstream Charter', XCharter, 'Sitka Text', Cambria, Georgia, 'Times New Roman', serif" color="#1b1b1f" viewBox="0 0 640 319" width="100%" role="img" aria-label="Three panels, one per test context, each ranking the closest matches among 1673 reference cell lines. Context A matches Jurkat and four other lymphoid lines; context B matches HeLa by a wide margin; context C matches CAL33 and four other head and neck lines.">
+  <rect x="0" y="0" width="100%" height="100%" fill="#ffffff"/>
   <text x="20" y="24" font-size="12" font-weight="600" fill="currentColor">Closest match among 1,673 reference cell lines</text>
-  <text x="20" y="40" font-size="10.5" fill="currentColor" opacity="0.65">correlation of each context&#8217;s resting profile with bulk RNA-seq of known lines, on 3,000 variable genes</text>
+  <text x="20" y="40" font-size="10.5" fill="currentColor" opacity="0.65">correlation of each context&#8217;s control profile with bulk RNA-seq of known lines, on 3,000 variable genes</text>
   <text x="24" y="72" font-size="11" font-weight="700" fill="#2563eb">context A</text>
   <text x="204" y="72" font-size="9.5" text-anchor="end" fill="currentColor" opacity="0.55">Lymphoid</text>
   <text x="24" y="92" font-size="9.5" fill="currentColor" opacity="0.95">JURKAT</text>

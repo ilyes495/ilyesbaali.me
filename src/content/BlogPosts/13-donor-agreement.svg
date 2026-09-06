@@ -1,7 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" font-family="Charter, 'Bitstream Charter', XCharter, 'Sitka Text', Cambria, Georgia, 'Times New Roman', serif" color="#1b1b1f" viewBox="0 0 640 315" width="100%" role="img" aria-label="A bar chart of how well two screens agree on the same perturbation. Pairs from the same lineage agree at cosine 0.25 to 0.33; every cross-lineage pair falls between 0.016 and 0.037, roughly ten times lower." style="max-width:640px">
+<svg xmlns="http://www.w3.org/2000/svg" font-family="Charter, 'Bitstream Charter', XCharter, 'Sitka Text', Cambria, Georgia, 'Times New Roman', serif" color="#1b1b1f" viewBox="0 0 640 315" width="100%" role="img" aria-label="A bar chart of how well two screens agree on the same perturbation. Pairs that are the same cell type in different activation states agree at cosine 0.25 to 0.33; every pair of different cell types falls between 0.016 and 0.037, roughly ten times lower.">
+  <rect x="0" y="0" width="100%" height="100%" fill="#ffffff"/>
   <text x="20" y="24" font-size="12" font-weight="600" fill="currentColor">Do two screens agree about the same perturbation?</text>
   <text x="20" y="40" font-size="10.5" fill="currentColor" opacity="0.65">for each perturbation, how aligned the two screens&#8217; rows of effect numbers are</text>
-  <text x="262" y="66" font-size="10" font-weight="700" fill="#2563eb">SAME LINEAGE &#8212; one cell type, different states</text>
+  <text x="262" y="66" font-size="10" font-weight="700" fill="#2563eb">SAME CELL TYPE, DIFFERENT STATES</text>
   <text x="252" y="94" font-size="9.5" text-anchor="end" fill="currentColor" opacity="0.95">CD4 8 h &#183; CD4 48 h</text>
   <rect x="262" y="83" width="307.0" height="13" rx="2" fill="#2563eb" opacity="0.8"/>
   <text x="576" y="94" font-size="10" fill="#2563eb" opacity="0.95">0.331</text>
@@ -11,7 +12,7 @@
   <text x="252" y="140" font-size="9.5" text-anchor="end" fill="currentColor" opacity="0.95">CD4 rest &#183; CD4 48 h</text>
   <rect x="262" y="129" width="230.0" height="13" rx="2" fill="#2563eb" opacity="0.8"/>
   <text x="499" y="140" font-size="10" fill="#2563eb" opacity="0.95">0.248</text>
-  <text x="262" y="169" font-size="10" font-weight="700" fill="currentColor" opacity="0.6">DIFFERENT LINEAGES</text>
+  <text x="262" y="169" font-size="10" font-weight="700" fill="currentColor" opacity="0.6">DIFFERENT CELL TYPES</text>
   <text x="252" y="193" font-size="9.5" text-anchor="end" fill="currentColor" opacity="0.7">HCT116 &#183; HEK293T</text>
   <rect x="262" y="182" width="34.5" height="13" rx="2" fill="currentColor" opacity="0.35"/>
   <text x="303" y="193" font-size="10" fill="currentColor" opacity="0.95">0.037</text>
@@ -27,6 +28,6 @@
   <text x="252" y="277" font-size="9.5" text-anchor="end" fill="currentColor" opacity="0.7">K562 &#183; HEK293T</text>
   <rect x="262" y="266" width="24.6" height="13" rx="2" fill="currentColor" opacity="0.35"/>
   <text x="294" y="277" font-size="10" fill="currentColor" opacity="0.95">0.026</text>
-  <text x="262" y="298" font-size="10" fill="currentColor" opacity="0.55">&#8230; and the remaining 7 cross-lineage pairs, every one below 0.03</text>
+  <text x="262" y="298" font-size="10" fill="currentColor" opacity="0.55">&#8230; and the remaining 7 pairs of different cell types, every one below 0.03</text>
   <line x1="262" y1="82" x2="262" y2="286" stroke="currentColor" stroke-width="1" opacity="0.3"/>
 </svg>
