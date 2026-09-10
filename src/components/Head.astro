@@ -1,5 +1,7 @@
 ---
-import {template} from '@/settings'
+import {template, analytics} from '@/settings'
+
+const gaId = import.meta.env.PROD ? analytics.googleId : ''
 interface Props {
 	title: string
 	description: string
@@ -18,6 +20,25 @@ const { title, description, image } = Astro.props
 <meta name='generator' content={Astro.generator} />
 
 <!-- Sitemap -->
+{gaId && (
+	<>
+		<!-- Google Analytics 4 -->
+		<script is:inline async src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`}></script>
+		<script is:inline define:vars={{ gaId }}>
+			// The site navigates client-side (Astro ClientRouter), so this head script can
+			// persist across pages. Initialise once; GA4's enhanced measurement records the
+			// later navigations from browser history events.
+			if (!window.__gaInitialised) {
+				window.__gaInitialised = true
+				window.dataLayer = window.dataLayer || []
+				window.gtag = function () { window.dataLayer.push(arguments) }
+				window.gtag('js', new Date())
+				window.gtag('config', gaId)
+			}
+		</script>
+	</>
+)}
+
 <link rel="sitemap" href={`${template.base}/sitemap-index.xml`} />
 
 <!-- Canonical URL -->

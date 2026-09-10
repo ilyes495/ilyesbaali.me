@@ -78,3 +78,9 @@ export const seo = {
 		'Computational biologist working on machine learning for RNA biology and translational oncology.',
 	default_image: '/images/og-image.png',
 }
+
+// Google Analytics 4. Same property the previous site used, so traffic history
+// continues. Only emitted in production builds, so local dev does not count.
+export const analytics = {
+	googleId: 'G-KW0KKTHCJJ',
+}
